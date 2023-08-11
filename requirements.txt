@@ -1,0 +1,4 @@
+ipykernel == 6.15.0
+pandas ==1.5.0
+omegaconf==2.3.0
+PyYAM==6.0.1

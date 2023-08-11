@@ -1,0 +1,38 @@
+# EVERYTHING IS UNDER A BIG DICTIONARY
+# normal key-value pairs
+account: # key-list
+  - user1
+  - user2
+  - user3
+# nested dictionary
+server:
+  host: localhost # key-string
+  port: 80
+# nested dictionary
+ner:
+  date:
+  - DATE
+  location:
+  - GPE
+  - LOC
+  location_attributes:
+  - display_name
+  - lat
+  - lon
+  - boundingbox
+  model: en_core_web_sm
+
+# nested list
+topic_mapping:
+# to have nested list, put a placeholder - in the 1st indent position
+# dont put anything after this placeholder
+  -
+    - weather_naturalevent
+    - weather
+  -
+    - weather_generalnews
+    - weather
+
+topic_mapping_dict:
+  weather_naturalevent: weather
+  weather_generalnews: weather
